@@ -1,16 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youthly</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Youthly – Longevity & Biohacking</title>
+  <meta name="description" content="Youthly: your longevity & biohacking coach. Simple routines, clear tracking, real progress.">
+  <meta property="og:title" content="Youthly – Longevity & Biohacking">
+  <meta property="og:description" content="Coach for longevity, nutrition, sleep and daily routines.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%2316a34a%22/><text x=%2250%22 y=%2262%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22>Y</text></svg>">
 </head>
 <body>
-  <header>
-    <h1>Youthly</h1>
-    <p>Longevity & Biohacking in your pocket 🚀</p>
-    <a href="#">Download the App</a>
+  <header class="nav">
+    <a class="brand" href="./">Youthly</a>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a class="btn" href="#download">Download</a>
+    </nav>
   </header>
+
+  <main class="hero">
+    <h1>Longevity in your pocket</h1>
+    <p class="subtitle">A clean, daily system for nutrition, sleep, movement, and stress. Actionable, not noisy.</p>
+    <div class="cta">
+      <a class="btn primary" id="download" href="#">App Store (coming soon)</a>
+      <a class="btn ghost" href="privacy.html">Read Privacy</a>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>AI Coach</h3>
+        <p>Daily plan, check‑ins, adaptive guidance.</p>
+      </div>
+      <div class="card">
+        <h3>Habits</h3>
+        <p>Simple routines for long‑term results.</p>
+      </div>
+      <div class="card">
+        <h3>Insights</h3>
+        <p>Trends for 7/30/90 days and clear goals.</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="section">
+    <h2>Why Youthly?</h2>
+    <ul class="bullets">
+      <li>Minimal, mobile‑first experience.</li>
+      <li>Clear, actionable recommendations.</li>
+      <li>Privacy by design — your data stays yours.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> Youthly. All rights reserved.</p>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
